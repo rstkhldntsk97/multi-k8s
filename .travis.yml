@@ -14,7 +14,7 @@ deploy:
   secret_access_key: $SECRET_KEY
   region: "eu-central-1"
   app: "docker"
-  env: "Docker-env"
+  env: "Docker-env-1"
   bucket_name: "elasticbeanstalk-eu-central-1-307196522452"
   on:
     branch: main

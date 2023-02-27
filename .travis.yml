@@ -10,10 +10,8 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "$ACCESS_KEY"
-  secret_access_key:
-    secure: "$SECRET_KEY"
+  access_key_id: $ACCESS_KEY
+  secret_access_key: $SECRET_KEY
   region: "eu-central-1"
   app: "docker"
   env: "Docker-env"

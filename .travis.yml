@@ -8,7 +8,7 @@ script:
   - docker run -e CI=true rstkhldntsk/complex-test  npm test
 
 after_success:
-  - docker build -t rstkhldntsk/complex ./client
+  - docker build -t rstkhldntsk/client ./client
   - docker build -t rstkhldntsk/nginx ./nginx
   - docker build -t rstkhldntsk/server ./server
   - docker build -t rstkhldntsk/worker ./worker
